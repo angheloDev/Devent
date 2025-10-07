@@ -1,7 +1,7 @@
 import {
 	EventSearch,
 	HeroSection,
-	MustSeeEvents,
+	EventsList,
 } from '@/components/component-exporter';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
 			<div className='min-h-screen bg-[#0F172A] text-white'>
 				<HeroSection />
 				<EventSearch />
-				<MustSeeEvents />
+				<EventsList />
 			</div>
 		</>
 	);

@@ -1,6 +1,6 @@
 const HeroSection = () => {
 	return (
-		<section className='bg-gradient-to-b from-[#6B5BFF] to-[#2C2F48] h-[20rem] flex items-center px-4'>
+		<section className='bg-gradient-to-b from-[#6B5BFF] to-[#2C2F48] h-[25rem] flex items-center px-4'>
 			<div className='mx-auto font-gothicA1'>
 				<h1 className='text-5xl md:text-6xl font-bold mb-3 text-white'>
 					Discover Amazing Events

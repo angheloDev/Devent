@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 import { events } from '@/data/mock-data';
 import { useLocation } from 'react-router';
 
-const MustSeeEvents = () => {
+const EventsList = () => {
 	const location = useLocation().pathname;
 	return (
 		<div className='bg-[#0F172A]'>
@@ -60,4 +60,4 @@ const MustSeeEvents = () => {
 	);
 };
 
-export default MustSeeEvents;
+export default EventsList;
