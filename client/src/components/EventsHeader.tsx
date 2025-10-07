@@ -5,7 +5,7 @@ const EventsHeader = () => {
 				<h1 className='text-[25px] md:text-[35px] text-white'>
 					List of Events
 				</h1>
-				<p className='text-gray-200 text-sm md:text-base max-w-xl'>
+				<p className='text-gray-200 text-sm md:text-lg max-w-xl'>
 					Pick your vibe, plan your day.
 				</p>
 			</div>

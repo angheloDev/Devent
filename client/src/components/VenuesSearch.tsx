@@ -1,12 +1,12 @@
 import { Input } from './ui/input';
 
-const EventsEventsSearch = () => {
+const VenuesSearch = () => {
 	return (
 		<div className='w-full bg-[#1A1F2C] border-4 border-x-0 border-[#3C4B72] py-6 px-12 shadow-lg font-montserat'>
 			<div className='mx-4 md:mx-auto max-w-4xl '>
 				<div className='flex flex-col md:flex-row gap-3 justify-center mt-1'>
 					<Input
-						placeholder='events...'
+						placeholder='Search venue...'
 						className='bg-[#252B3A] border-none text-gray-300 w-full border-gray-500 rounded-2xl'
 					/>
 					<div className='flex gap-2'>
@@ -22,21 +22,17 @@ const EventsEventsSearch = () => {
 					</div>
 				</div>
 
-				<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mt-4'>
+				<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4'>
 					<Input
-						placeholder='Event Type'
+						placeholder='City'
 						className='bg-[#252B3A] border-none text-gray-300 rounded-2xl'
 					/>
 					<Input
-						placeholder='Month'
+						placeholder='Type'
 						className='bg-[#252B3A] border-none text-gray-300 rounded-2xl'
 					/>
 					<Input
-						placeholder='Near City'
-						className='bg-[#252B3A] border-none text-gray-300 rounded-2xl'
-					/>
-					<Input
-						placeholder='Date Range'
+						placeholder='Capacity'
 						className='bg-[#252B3A] border-none text-gray-300 rounded-2xl'
 					/>
 				</div>
@@ -45,4 +41,4 @@ const EventsEventsSearch = () => {
 	);
 };
 
-export default EventsEventsSearch;
+export default VenuesSearch;

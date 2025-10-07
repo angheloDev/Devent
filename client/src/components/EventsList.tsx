@@ -45,6 +45,8 @@ const EventsList = () => {
 								<p className='text-sm text-gray-300'>{event.location}</p>
 								<p className='text-sm text-gray-300 mb-3'>{event.time}</p>
 
+								<div className='border-t border-gray-400 my-4'></div>
+
 								<div className='flex items-center justify-between mt-4'>
 									<p className='text-lg font-semibold'>{event.price}</p>
 									<Button className='bg-[#3C4B72] hover:bg-[#56618a] text-gray-200'>

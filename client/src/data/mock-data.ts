@@ -64,3 +64,120 @@ export const events: Array<Event> = [
 		tag: 'Sports',
 	},
 ];
+
+type Venue = {
+	id: number;
+	name: string;
+	type: string;
+	location: string;
+	contact: number;
+	description: string;
+	upcoming: number;
+	past: number;
+	rating: number;
+};
+
+export const venues: Venue[] = [
+	{
+		id: 1,
+		name: 'Araneta Coliseum',
+		type: 'ARENA',
+		location: 'Cubao, Quezon City',
+		contact: 6329115555,
+		description: 'Large capacity, concert-ready, premium sound system.',
+		upcoming: 8,
+		past: 203,
+		rating: 4.9,
+	},
+	{
+		id: 2,
+		name: 'SM Mall of Asia Arena',
+		type: 'ARENA',
+		location: 'Pasay City, Metro Manila',
+		contact: 6327654321,
+		description: 'World-class arena for concerts, sports, and conventions.',
+		upcoming: 6,
+		past: 158,
+		rating: 4.8,
+	},
+	{
+		id: 3,
+		name: 'Bonifacio Global City Amphitheater',
+		type: 'OUTDOOR VENUE',
+		location: 'Bonifacio High Street, Taguig',
+		contact: 6321234567,
+		description: 'Open-air amphitheater perfect for live music and festivals.',
+		upcoming: 10,
+		past: 112,
+		rating: 4.7,
+	},
+	{
+		id: 4,
+		name: 'SMX Convention Center',
+		type: 'CONVENTION CENTER',
+		location: 'Seashell Lane, Pasay City',
+		contact: 625568888,
+		description:
+			'Massive convention hall ideal for expos, trade fairs, and tech events.',
+		upcoming: 12,
+		past: 340,
+		rating: 4.9,
+	},
+	{
+		id: 5,
+		name: 'Ayala Center Cebu',
+		type: 'MALL VENUE',
+		location: 'Cebu City, Cebu',
+		contact: 63322315342,
+		description:
+			'Premier Cebu venue for concerts, local shows, and lifestyle events.',
+		upcoming: 5,
+		past: 98,
+		rating: 4.8,
+	},
+	{
+		id: 6,
+		name: 'Davao Convention Center',
+		type: 'CONVENTION CENTER',
+		location: 'Davao City, Davao del Sur',
+		contact: 63822217788,
+		description: 'Modern facility for national conferences and exhibitions.',
+		upcoming: 7,
+		past: 145,
+		rating: 4.7,
+	},
+	{
+		id: 7,
+		name: 'Smart Araneta Coliseum Annex',
+		type: 'ARENA',
+		location: 'Cubao, Quezon City',
+		contact: 6325211111,
+		description: 'Secondary arena with upgraded facilities for smaller events.',
+		upcoming: 4,
+		past: 87,
+		rating: 4.6,
+	},
+	{
+		id: 8,
+		name: 'Zamboanga City Coliseum',
+		type: 'ARENA',
+		location: 'Zamboanga City, Zamboanga Peninsula',
+		contact: 63629921234,
+		description: 'Home of local sports and cultural shows, newly renovated.',
+		upcoming: 3,
+		past: 64,
+		rating: 4.5,
+	},
+	{
+		id: 9,
+		name: 'Iloilo Convention Center',
+		type: 'CONVENTION CENTER',
+		location: 'Mandurriao, Iloilo City',
+		contact: 63333356666,
+		description:
+			'Modern venue with elegant design for business and tech conferences.',
+		upcoming: 9,
+		past: 220,
+		rating: 4.9,
+	},
+];

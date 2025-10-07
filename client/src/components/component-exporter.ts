@@ -5,3 +5,6 @@ export { default as EventSearch } from './EventSearch';
 export { default as EventsList } from './EventsList';
 export { default as EventsHeader } from './EventsHeader';
 export { default as EventsEventsSearch } from './Events-EventsSearch';
+export { default as VenuesHeader } from './VenuesHeader';
+export { default as VenuesSearch } from './VenuesSearch';
+export { default as VenuesList } from './VenuesList';
