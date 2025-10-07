@@ -3,7 +3,7 @@ import { Input } from './ui/input';
 
 const EventSearch = () => {
 	return (
-		<div className='bg-[#1A1F2C] mx-4 md:mx-auto -mt-16 max-w-5xl rounded-xl border-4 border-[#3C4B72] py-6 px-12 shadow-lg font-montserat'>
+		<div className='bg-[#1A1F2C] mx-4 md:mx-auto -mt-20 max-w-5xl rounded-xl border-4 border-[#3C4B72] py-6 px-12 shadow-lg font-montserat'>
 			<p className='text-gray-400'>Search</p>
 			<div className='flex flex-col md:flex-row gap-3 justify-center mt-1'>
 				<Input
