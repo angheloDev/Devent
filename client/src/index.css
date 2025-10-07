@@ -1,5 +1,26 @@
 @import 'tailwindcss';
 
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+	--font-gothicA1: 'Gothic+A1', sans-serif;
+	--font-montserat: 'Montserrat', sans-serif;
+}
+
+/* @font-face {
+	font-family: Montserrat;
+	src: url('../src/assets/fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+	font-family: GothicA1;
+	src: url('../src/assets/fonts/GothicA1-Regular.ttf');
+}
+
+@theme {
+	--font-montserrat: Montserrat, 'sans-serif';
+	--font-gothicA1: GothicA1, 'sans-serif';
+} */
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
