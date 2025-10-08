@@ -1,6 +1,6 @@
-import { Button } from './ui/button';
-import { Card, CardContent } from './ui/card';
-import { venues } from '../data/mock-data';
+import { Button } from '../ui/button';
+import { Card, CardContent } from '../ui/card';
+import { venues } from '../../data/mock-data';
 
 const VenuesList = () => {
 	return (
@@ -10,7 +10,7 @@ const VenuesList = () => {
 					{venues.map((venue) => (
 						<Card
 							key={venue.id}
-							className='bg-[#1A1F2C] rounded-2xl text-gray-200 border-none shadow-md hover:shadow-lg transition-all'
+							className='bg-[#1E293B] rounded-3xl text-gray-200 border-none shadow-md hover:shadow-lg transition-all'
 						>
 							<div className='px-6'>
 								<h3 className='text-lg font-semibold text-white'>
@@ -20,7 +20,7 @@ const VenuesList = () => {
 									{venue.type}
 								</p>
 							</div>
-							<CardContent className='p-6'>
+							<CardContent className='p-6 pb-0'>
 								<p className='text-sm text-gray-300'>{venue.location}</p>
 								<p className='text-sm text-gray-300'>{venue.contact}</p>
 								<p className='text-sm text-gray-400 mt-2 leading-snug'>
