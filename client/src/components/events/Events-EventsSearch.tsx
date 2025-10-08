@@ -10,15 +10,6 @@ const EventsEventsSearch = () => {
 						className='bg-[#252B3A] border-none text-gray-300 w-full border-gray-500 rounded-2xl'
 					/>
 					<div className='flex gap-2'>
-						{/* <Button className='bg-[#6B5BFF] text-white hover:bg-[#5948d8] w-full md:w-auto'>
-						Search
-					</Button> */}
-						{/* <Button
-							variant='outline'
-							className='text-gray-400 border-gray-500 w-full md:w-auto bg-[#252B3A] cursor-pointer'
-						>
-							All
-						</Button> */}
 					</div>
 				</div>
 
@@ -30,15 +21,15 @@ const EventsEventsSearch = () => {
 					<Input
 						placeholder='Month'
 						className='bg-[#252B3A] border-none text-gray-300 rounded-2xl'
-					/>
+						/>
 					<Input
 						placeholder='Near City'
 						className='bg-[#252B3A] border-none text-gray-300 rounded-2xl'
-					/>
+						/>
 					<Input
 						placeholder='Date Range'
 						className='bg-[#252B3A] border-none text-gray-300 rounded-2xl'
-					/>
+						/>
 				</div>
 			</div>
 		</div>
@@ -46,3 +37,13 @@ const EventsEventsSearch = () => {
 };
 
 export default EventsEventsSearch;
+
+{/* <Button className='bg-[#6B5BFF] text-white hover:bg-[#5948d8] w-full md:w-auto'>
+Search
+</Button> */}
+{/* <Button
+	variant='outline'
+	className='text-gray-400 border-gray-500 w-full md:w-auto bg-[#252B3A] cursor-pointer'
+>
+	All
+</Button> */}

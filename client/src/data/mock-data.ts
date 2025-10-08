@@ -181,3 +181,56 @@ export const venues: Venue[] = [
 		rating: 4.9,
 	},
 ];
+
+export const features = Array.from({ length: 6 }).map((_, i) => ({
+	id: i + 1,
+	title: 'Smart Discovery',
+	subtitle:
+		'Advanced filtering and search capabilities help you find events that match your interests, location, and schedule perfectly.',
+}));
+
+type TeamMember = {
+	id: number;
+	name: string;
+	role: string;
+	nawng: string;
+};
+
+export const team: TeamMember[] = [
+	{
+		id: 1,
+		name: 'Ashley Quicho',
+		role: 'Project Manager',
+		nawng: '/nawng-sa-mga-taw/ashley.jpg',
+	},
+	{
+		id: 2,
+		name: 'Felixandra Malicay',
+		role: 'Business Analyst',
+		nawng: '/nawng-sa-mga-taw/fel.jpg',
+	},
+	{
+		id: 3,
+		name: 'Paul Villacura',
+		role: 'Quality Assurance Engineer',
+		nawng: '/nawng-sa-mga-taw/paul.jpg',
+	},
+	{
+		id: 4,
+		name: 'Angelo Galleros',
+		role: 'Lead Developer',
+		nawng: '/nawng-sa-mga-taw/ako.jpg',
+	},
+	{
+		id: 4,
+		name: 'Mark Luis Salvador',
+		role: 'UI/UX Designer',
+		nawng: '/nawng-sa-mga-taw/luis.jpg',
+	},
+	{
+		id: 4,
+		name: 'Alfasher Jamsani',
+		role: 'Technical Writer',
+		nawng: '/nawng-sa-mga-taw/alfasher.jpg',
+	},
+];

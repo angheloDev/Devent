@@ -8,3 +8,7 @@ export { default as EventsEventsSearch } from './events/Events-EventsSearch';
 export { default as VenuesHeader } from './venues/VenuesHeader';
 export { default as VenuesSearch } from './venues/VenuesSearch';
 export { default as VenuesList } from './venues/VenuesList';
+export { default as MissionSection } from './about/MissionSection';
+export { default as DapatPilionKoNimo } from './about/DapatPilionKoNimo';
+export { default as TeamSection } from './about/TeamSection';
+export { default as ContactSection } from './about/ContactSection';
