@@ -1,10 +1,11 @@
 import { Card, CardContent } from '../ui/card';
 import { Button } from '../ui/button';
 import { events } from '@/data/mock-data';
-import { useLocation } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 
 const EventsList = () => {
-	const location = useLocation().pathname;
+	const location: string = useLocation().pathname;
+	const navigate = useNavigate();
 	return (
 		<div className='bg-[#0F172A]'>
 			<section className='max-w-[100rem] mx-auto px-7 md:px-10 py-12 font-montserat'>
@@ -49,7 +50,14 @@ const EventsList = () => {
 
 								<div className='flex items-center justify-between mt-4'>
 									<p className='text-lg font-semibold'>{event.price}</p>
-									<Button className='bg-[#3C4B72] hover:bg-[#56618a] text-gray-200'>
+									<Button
+										className='bg-[#3C4B72] hover:bg-[#56618a] text-gray-200'
+										onClick={() => {
+											if (location === '/') {
+												navigate(`events/${event.id}`);
+											} else navigate(`${event.id}`);
+										}}
+									>
 										View Details
 									</Button>
 								</div>

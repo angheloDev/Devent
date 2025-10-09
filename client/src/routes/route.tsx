@@ -1,6 +1,13 @@
 import { createBrowserRouter } from 'react-router';
 import Layout from '../Layout';
-import { About, Events, Home, Venues } from '../pages/page-exporter';
+import {
+	About,
+	EventDetails,
+	Events,
+	Home,
+	Venues,
+} from '../pages/page-exporter';
+import { eventLoader } from '../pages/events/eventLoader';
 
 export const router = createBrowserRouter([
 	{
@@ -14,6 +21,11 @@ export const router = createBrowserRouter([
 			{
 				path: 'events',
 				element: <Events />,
+			},
+			{
+				path: 'events/:eventId',
+				element: <EventDetails />,
+				loader: eventLoader,
 			},
 			{
 				path: 'venues',
