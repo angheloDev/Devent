@@ -1,4 +1,4 @@
-export { default as Home } from './Home';
-export { default as Events } from './Events';
-export { default as Venues } from './Venues';
-export { default as About } from './About';
+export { default as Home } from './home/Home';
+export { default as Events } from './events/Events';
+export { default as Venues } from './venues/Venues';
+export { default as About } from './about/About';

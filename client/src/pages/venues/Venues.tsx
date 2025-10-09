@@ -2,7 +2,7 @@ import {
 	VenuesHeader,
 	VenuesList,
 	VenuesSearch,
-} from '../components/component-exporter';
+} from '../../components/component-exporter';
 
 const Venues = () => {
 	return (
