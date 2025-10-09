@@ -234,3 +234,16 @@ export const team: TeamMember[] = [
 		nawng: '/nawng-sa-mga-taw/alfasher.jpg',
 	},
 ];
+
+type Statistic = {
+	id: number;
+	value: string;
+	label: string;
+};
+
+export const stats: Statistic[] = [
+	{ id: 1, value: '10K+', label: 'EVENTS LISTED' },
+	{ id: 2, value: '500+', label: 'VENUES' },
+	{ id: 3, value: '50K+', label: 'SATISFIED USERS' },
+	{ id: 4, value: '100+', label: 'CITIES' },
+];

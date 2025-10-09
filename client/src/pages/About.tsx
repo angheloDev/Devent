@@ -2,6 +2,7 @@ import {
 	ContactSection,
 	DapatPilionKoNimo,
 	MissionSection,
+	StatsSection,
 	TeamSection,
 } from '@/components/component-exporter';
 
@@ -14,7 +15,7 @@ const About = () => {
 					<h1 className='text-3xl md:text-5xl font-extrabold text-[#b99fff] mb-4'>
 						About DEVENT
 					</h1>
-					<p className='max-w-3xl mx-auto text-gray-300'>
+					<p className='max-w-3xl mx-auto text-lg text-gray-300'>
 						Your gateway to discovering amazing events, connecting with vibrant
 						communities, and creating unforgettable memories
 					</p>
@@ -24,6 +25,7 @@ const About = () => {
 			<main className='px-4 md:px-6'>
 				<MissionSection />
 				<DapatPilionKoNimo />
+				<StatsSection />
 				<TeamSection />
 				<ContactSection />
 			</main>

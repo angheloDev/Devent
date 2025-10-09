@@ -17,8 +17,8 @@ const TeamSection = () => {
 							/>
 						</div>
 						<div className='w-full bg-[#D9D9D9] rounded-xl pt-16 pb-6 px-4 shadow-inner max-w-xs'>
-							<h4 className='text-lg font-semibold text-[#0f1724]'>{m.name}</h4>
-							<p className='text-sm text-gray-600 mt-1'>{m.role}</p>
+							<h4 className='text-2xl font-semibold text-[#0f1724]'>{m.name}</h4>
+							<p className='text-lg text-gray-600 mt-1'>{m.role}</p>
 						</div>
 					</div>
 				))}

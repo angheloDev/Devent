@@ -11,4 +11,5 @@ export { default as VenuesList } from './venues/VenuesList';
 export { default as MissionSection } from './about/MissionSection';
 export { default as DapatPilionKoNimo } from './about/DapatPilionKoNimo';
 export { default as TeamSection } from './about/TeamSection';
+export { default as StatsSection } from './about/StatsSection';
 export { default as ContactSection } from './about/ContactSection';
