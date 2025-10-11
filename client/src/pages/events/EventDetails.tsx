@@ -6,8 +6,7 @@ const EventDetails = () => {
 	const event: Event = useLoaderData();
 	const navigate = useNavigate();
 	return (
-		<section className='bg-[#0C1424] text-white min-h-screen flex flex-col'>
-
+		<section className='mt-15 bg-[#0C1424] text-white min-h-screen flex flex-col'>
 			<div className='relative w-full h-[300px] md:h-[400px] lg:h-[450px]'>
 				<img
 					src={event.image}
@@ -62,7 +61,10 @@ const EventDetails = () => {
 				</p>
 
 				<div className='flex flex-col sm:flex-row gap-4 md:gap-30  justify-center mt-8'>
-					<Button className='cursor-pointer bg-gradient-to-r from-indigo-500 to-purple-500 hover:opacity-90 transition text-white px-6 py-2 rounded-md'>
+					<Button
+						className='cursor-pointer bg-gradient-to-r from-indigo-500 to-purple-500 hover:opacity-90 transition text-white px-6 py-2 rounded-md'
+						onClick={() => navigate(`/events/map/${event.id}`)}
+					>
 						Open Map
 					</Button>
 					<Button

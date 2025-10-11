@@ -8,8 +8,7 @@ import {
 
 const About = () => {
 	return (
-		<div className='min-h-screen bg-[#0F172A] text-white pt-10'>
-			{/* Hero / About Header (excluded navbar per request) */}
+		<div className='min-h-screen bg-[#0F172A] text-white pt-10 mt-[58px]'>
 			<header className='bg-[#1f1b2e] md:bg-transparent font-gothicA1'>
 				<div className='py-10 md:py-20 text-center px-4 md:px-0'>
 					<h1 className='text-3xl md:text-5xl font-extrabold text-[#b99fff] mb-4'>
