@@ -26,9 +26,9 @@ const EventsList = () => {
 							className='bg-gradient-to-b from-[#7B6EFF] to-[#2A2F48] rounded-4xl shadow-lg overflow-hidden border-none text-gray-100 pt-0'
 						>
 							<div className='h-[13rem] bg-gradient-to-r from-[#9993FF] to-[#492779] w-full'>
-								<div className='flex justify-end mr-6 mt-6'>
+								<div className='flex justify-end mr-6 mt-6 '>
 									<span
-										className={`px-3 py-1 text-xs rounded-full font-semibold ${
+										className={`px-3 py-1 text-xs rounded-full font-semibold hover:scale-110 ${
 											event.tag === 'Concert'
 												? 'bg-pink-500/80'
 												: event.tag === 'Tech'
@@ -51,7 +51,7 @@ const EventsList = () => {
 								<div className='flex items-center justify-between mt-4'>
 									<p className='text-lg font-semibold'>{event.price}</p>
 									<Button
-										className='bg-[#3C4B72] hover:bg-[#56618a] text-gray-200'
+										className='bg-gradient-to-b from-[#6B5BFF] hover:bg-gradient-to-t to-[#2C2F48] text-gray-200 cursor-pointer rounded-lg'
 										onClick={() => {
 											if (location === '/') {
 												navigate(`events/${event.id}`);
