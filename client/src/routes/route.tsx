@@ -7,6 +7,7 @@ import {
 	Events,
 	Home,
 	Venues,
+	ErrorPage,
 } from '../pages/page-exporter';
 import { eventLoader } from '../pages/events/eventLoader';
 
@@ -23,7 +24,7 @@ export const router = createBrowserRouter([
 				path: 'events',
 				element: <Events />,
 			},
-			// Kaning gipatung-an ani kind of like sa events ni nga children, limtanon raba ka anga ka
+			// *******************************kunwari_dibayder**********************************
 			{
 				path: 'events/:eventId',
 				element: <EventDetails />,
@@ -34,7 +35,7 @@ export const router = createBrowserRouter([
 				element: <EventMap />,
 				loader: eventLoader,
 			},
-			// Kaning gipatung-an ani kind of like sa events ni nga children, limtanon raba ka anga ka
+			// *******************************kunwari_dibayder**********************************
 			{
 				path: 'venues',
 				element: <Venues />,
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
 			{
 				path: 'about',
 				element: <About />,
+			},
+			{
+				path: '*',
+				element: <ErrorPage />,
 			},
 		],
 	},
