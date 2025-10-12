@@ -67,6 +67,7 @@ const VenuesSearch = ({
 						type='number'
 						placeholder='Capacity'
 						value={enteredCapacity}
+						onChange={(e) => setEnteredCapacity(e.target.value)}
 						className='bg-[#252B3A] border-none text-gray-300 rounded-2xl'
 					/>
 				</div>

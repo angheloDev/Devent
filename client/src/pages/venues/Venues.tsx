@@ -40,8 +40,8 @@ const Venues = () => {
 				!venueType ||
 				venue.type.toLowerCase().includes(venueType.toLocaleLowerCase());
 
-			const matchingCapacity = !enteredCapacity || null;
-			// venue.capacity.toLowerCase().includes(enteredCapacity.toLocaleLowerCase());
+			const matchingCapacity =
+				!enteredCapacity || venue.capacity >= Number(enteredCapacity);
 
 			return matchingVenue && matchingCity && matchingType && matchingCapacity;
 		});
