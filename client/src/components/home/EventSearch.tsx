@@ -15,7 +15,6 @@ interface EventSearchProps {
 	onDateRangeChange: (value: string) => void;
 	onClearFilters: () => void;
 }
-
 const EventSearch = ({
 	searchTerm,
 	eventType,
@@ -34,6 +33,7 @@ const EventSearch = ({
 			<p className='text-gray-400'>Search</p>
 			<div className='flex flex-col md:flex-row gap-3 justify-center mt-1'>
 				<Input
+					type='text'
 					placeholder='events...'
 					value={searchTerm}
 					onChange={(e: ChangeEvent<HTMLInputElement>) =>
@@ -41,11 +41,12 @@ const EventSearch = ({
 					}
 					className='bg-[#252B3A] border-none text-gray-300 w-full border-gray-500 rounded-2xl'
 				/>
+
 				<div className='flex gap-2'>
 					<Button
 						variant='outline'
 						onClick={onClearFilters}
-						className='text-gray-400 border-gray-500 w-full md:w-auto bg-[#252B3A] cursor-pointer hover:bg-[#3C4B72]'
+						className='text-gray-400 border-gray-500 w-full md:w-auto bg-[#252B3A] cursor-pointer hover:bg-[#ebeef3]'
 					>
 						Clear All
 					</Button>
@@ -64,7 +65,7 @@ const EventSearch = ({
 				/>
 				<Input
 					type='date'
-					placeholder='Month'
+					// placeholder='Month'
 					value={selectedDate}
 					onChange={(e: ChangeEvent<HTMLInputElement>) =>
 						onDateChange(e.target.value)
@@ -82,7 +83,7 @@ const EventSearch = ({
 				/>
 				<Input
 					type='date'
-					placeholder='Date Range'
+					// placeholder='Date Range'
 					value={dateRange}
 					onChange={(e: ChangeEvent<HTMLInputElement>) =>
 						onDateRangeChange(e.target.value)
