@@ -1,23 +1,32 @@
 import { Card, CardContent } from '../ui/card';
 import { Button } from '../ui/button';
-import { events } from '@/data/mock-data';
+import type { Event } from '@/data/mock-data';
 import { useLocation, useNavigate } from 'react-router';
 
-const EventsList = () => {
+interface EventsListProps {
+	events: Event[];
+	hasActiveFilters: boolean;
+}
+const EventsList = ({ events, hasActiveFilters }: EventsListProps) => {
 	const location: string = useLocation().pathname;
 	const navigate = useNavigate();
+
 	return (
 		<div className='bg-[#0F172A]'>
 			<section className='max-w-[100rem] mx-auto px-7 md:px-10 py-12 font-montserat'>
-				{location === '/' && (
+				{location === '/' && !hasActiveFilters ? (
 					<h2 className='text-2xl md:text-3xl font-semibold mb-8 text-white'>
 						Must-See Events
 					</h2>
+				) : (
+					<p className='text-lg md:text-xl font-semibold mb-8 text-white'>
+						results:
+					</p>
 				)}
 
 				<div
 					className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 ${
-						location !== '/' && 'mt-5'
+						location !== '/' && !hasActiveFilters ? 'mt-5' : null
 					}`}
 				>
 					{events.map((event) => (
