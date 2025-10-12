@@ -18,11 +18,11 @@ const EventsList = ({ events, hasActiveFilters }: EventsListProps) => {
 					<h2 className='text-2xl md:text-3xl font-semibold mb-8 text-white'>
 						Must-See Events
 					</h2>
-				) : (
-					<p className='text-lg md:text-xl font-semibold mb-8 text-white'>
-						results:
-					</p>
-				)}
+				) : hasActiveFilters && !events.length ? (
+					<h3 className='text-slate-400 text-center'>no matches found</h3>
+				) : hasActiveFilters ? (
+					<p className='text-lg md:text-xl font-semibold mb-8'>results:</p>
+				) : null}
 
 				<div
 					className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 ${
