@@ -6,3 +6,4 @@ export { default as EventDetails } from './events/EventDetails';
 export { default as EventMap } from './events/EventMap';
 export { default as NotFoundPage } from './NotFoundPage';
 export { default as ErrorPage } from './ErrorPage';
+export { default as Loading } from './Loading';
