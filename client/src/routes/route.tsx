@@ -7,6 +7,7 @@ import {
 	Events,
 	Home,
 	Venues,
+	NotFoundPage,
 	ErrorPage,
 } from '../pages/page-exporter';
 import { eventLoader } from '../pages/events/eventLoader';
@@ -29,11 +30,13 @@ export const router = createBrowserRouter([
 				path: 'events/:eventId',
 				element: <EventDetails />,
 				loader: eventLoader,
+				errorElement: <ErrorPage />,
 			},
 			{
 				path: 'events/map/:eventId',
 				element: <EventMap />,
 				loader: eventLoader,
+				errorElement: <ErrorPage />,
 			},
 			// *******************************kunwari_dibayder**********************************
 			{
@@ -46,7 +49,7 @@ export const router = createBrowserRouter([
 			},
 			{
 				path: '*',
-				element: <ErrorPage />,
+				element: <NotFoundPage />,
 			},
 		],
 	},
