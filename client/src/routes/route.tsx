@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
 				path: 'events',
 				element: <Events />,
 			},
-			// *******************************kunwari_dibayder**********************************
+			// *****************************************************************
 			{
 				path: 'events/:eventId',
 				element: <EventDetails />,
@@ -38,7 +38,7 @@ export const router = createBrowserRouter([
 				loader: eventLoader,
 				errorElement: <ErrorPage />,
 			},
-			// *******************************kunwari_dibayder**********************************
+			// *****************************************************************
 			{
 				path: 'venues',
 				element: <Venues />,
