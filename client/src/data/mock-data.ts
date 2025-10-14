@@ -18,7 +18,7 @@ export const events: Array<Event> = [
 		time: '7:00 PM - 11:00 PM',
 		price: 2500,
 		tag: 'Concert',
-		image: '/event-images/WebDev-Summit.JPG',
+		image: '/event-images/Summer Music Festival 2025.png',
 	},
 	{
 		id: '2',
@@ -28,7 +28,7 @@ export const events: Array<Event> = [
 		time: '9:00 AM - 6:00 PM',
 		price: 3800,
 		tag: 'Tech',
-		image: '/event-images/WebDev-Summit.JPG',
+		image: '/event-images/Web Dev Summit 2025.png',
 	},
 	{
 		id: '3',
@@ -38,7 +38,7 @@ export const events: Array<Event> = [
 		time: '5:00 PM - 9:00 PM',
 		price: 1200,
 		tag: 'Sports',
-		image: '/event-images/WebDev-Summit.JPG',
+		image: '/event-images/PBA Finals Game 7.png',
 	},
 	{
 		id: '4',
@@ -48,7 +48,7 @@ export const events: Array<Event> = [
 		time: '6:30 PM - 10:00 PM',
 		price: 1800,
 		tag: 'Concert',
-		image: '/event-images/WebDev-Summit.JPG',
+		image: '/event-images/Jazz Night Under the Stars.png',
 	},
 	{
 		id: '5',
@@ -58,7 +58,7 @@ export const events: Array<Event> = [
 		time: '8:00 AM - 7:00 PM',
 		price: 4200,
 		tag: 'Tech',
-		image: '/event-images/WebDev-Summit.JPG',
+		image: '/event-images/AI & Machine Learning Expo.png',
 	},
 	{
 		id: '6',
@@ -68,7 +68,7 @@ export const events: Array<Event> = [
 		time: '4:00 AM - 12:00 PM',
 		price: 800,
 		tag: 'Sports',
-		image: '/event-images/WebDev-Summit.JPG',
+		image: '/event-images/Manila Marathon 2025.png',
 	},
 ];
 
@@ -77,7 +77,7 @@ export type Venue = {
 	name: string;
 	type: string;
 	location: string;
-	capacity: number
+	capacity: number;
 	contact: number;
 	description: string;
 	upcoming: number;
@@ -91,7 +91,7 @@ export const venues: Venue[] = [
 		name: 'Araneta Coliseum',
 		type: 'ARENA',
 		location: 'Cubao, Quezon City',
-			capacity: 5000,
+		capacity: 5000,
 		contact: 6329115555,
 		description: 'Large capacity, concert-ready, premium sound system.',
 		upcoming: 8,
@@ -103,7 +103,7 @@ export const venues: Venue[] = [
 		name: 'SM Mall of Asia Arena',
 		type: 'ARENA',
 		location: 'Pasay City, Metro Manila',
-			capacity: 4000,
+		capacity: 4000,
 		contact: 6327654321,
 		description: 'World-class arena for concerts, sports, and conventions.',
 		upcoming: 6,
@@ -115,7 +115,7 @@ export const venues: Venue[] = [
 		name: 'Bonifacio Global City Amphitheater',
 		type: 'OUTDOOR VENUE',
 		location: 'Bonifacio High Street, Taguig',
-			capacity: 4900,
+		capacity: 4900,
 		contact: 6321234567,
 		description: 'Open-air amphitheater perfect for live music and festivals.',
 		upcoming: 10,
@@ -127,7 +127,7 @@ export const venues: Venue[] = [
 		name: 'SMX Convention Center',
 		type: 'CONVENTION CENTER',
 		location: 'Seashell Lane, Pasay City',
-			capacity: 8000,
+		capacity: 8000,
 		contact: 625568888,
 		description:
 			'Massive convention hall ideal for expos, trade fairs, and tech events.',
@@ -140,7 +140,7 @@ export const venues: Venue[] = [
 		name: 'Ayala Center Cebu',
 		type: 'MALL VENUE',
 		location: 'Cebu City, Cebu',
-			capacity: 6300,
+		capacity: 6300,
 		contact: 63322315342,
 		description:
 			'Premier Cebu venue for concerts, local shows, and lifestyle events.',
@@ -153,7 +153,7 @@ export const venues: Venue[] = [
 		name: 'Davao Convention Center',
 		type: 'CONVENTION CENTER',
 		location: 'Davao City, Davao del Sur',
-			capacity: 7000,
+		capacity: 7000,
 		contact: 63822217788,
 		description: 'Modern facility for national conferences and exhibitions.',
 		upcoming: 7,
@@ -165,7 +165,7 @@ export const venues: Venue[] = [
 		name: 'Smart Araneta Coliseum Annex',
 		type: 'ARENA',
 		location: 'Cubao, Quezon City',
-			capacity: 5800,
+		capacity: 5800,
 		contact: 6325211111,
 		description: 'Secondary arena with upgraded facilities for smaller events.',
 		upcoming: 4,
@@ -177,7 +177,7 @@ export const venues: Venue[] = [
 		name: 'Zamboanga City Coliseum',
 		type: 'ARENA',
 		location: 'Zamboanga City, Zamboanga Peninsula',
-			capacity: 5500,
+		capacity: 5500,
 		contact: 63629921234,
 		description: 'Home of local sports and cultural shows, newly renovated.',
 		upcoming: 3,
@@ -189,7 +189,7 @@ export const venues: Venue[] = [
 		name: 'Iloilo Convention Center',
 		type: 'CONVENTION CENTER',
 		location: 'Mandurriao, Iloilo City',
-			capacity: 7200,
+		capacity: 7200,
 		contact: 63333356666,
 		description:
 			'Modern venue with elegant design for business and tech conferences.',

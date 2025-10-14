@@ -32,23 +32,28 @@ const EventsList = ({ events, hasActiveFilters }: EventsListProps) => {
 					{events.map((event) => (
 						<Card
 							key={event.id}
-							className='bg-gradient-to-b from-[#7B6EFF] to-[#2A2F48] rounded-4xl shadow-lg overflow-hidden border-none text-gray-100 pt-0'
+							className='relative bg-gradient-to-b from-[#7B6EFF] to-[#2A2F48] rounded-3xl shadow-lg overflow-hidden border-none text-gray-100 pt-0'
 						>
-							<div className='h-[13rem] bg-gradient-to-r from-[#9993FF] to-[#492779] w-full'>
-								<div className='flex justify-end mr-6 mt-6 '>
-									<span
-										className={`px-3 py-1 text-xs rounded-full font-semibold hover:scale-110 ${
-											event.tag === 'Concert'
-												? 'bg-pink-500/80'
-												: event.tag === 'Tech'
-												? 'bg-blue-500/80'
-												: 'bg-green-500/80'
-										}`}
-									>
-										{event.tag}
-									</span>
-								</div>
+							<div className='h-[13rem] w-full relative'>
+								<img
+									src={event.image}
+									alt='event image'
+									className='w-full h-full object-cover'
+								/>
+
+								<span
+									className={`absolute top-4 right-4 px-3 py-1 text-xs rounded-full font-semibold hover:scale-110 transition-transform ${
+										event.tag === 'Concert'
+											? 'bg-pink-500/80'
+											: event.tag === 'Tech'
+											? 'bg-blue-500/80'
+											: 'bg-green-500/80'
+									}`}
+								>
+									{event.tag}
+								</span>
 							</div>
+
 							<CardContent className='p-5'>
 								<h3 className='text-lg font-semibold'>{event.title}</h3>
 								<p className='text-sm text-gray-300 mt-1'>{event.date}</p>
@@ -58,7 +63,9 @@ const EventsList = ({ events, hasActiveFilters }: EventsListProps) => {
 								<div className='border-t border-gray-400 my-4'></div>
 
 								<div className='flex items-center justify-between mt-4'>
-									<p className='text-lg font-semibold'>{event.price}</p>
+									<p className='text-lg font-semibold text-[#FFE540]'>
+										{event.price}
+									</p>
 									<Button
 										className='bg-gradient-to-b from-[#6B5BFF] hover:bg-gradient-to-t to-[#2C2F48] text-gray-200 cursor-pointer rounded-lg'
 										onClick={() => {

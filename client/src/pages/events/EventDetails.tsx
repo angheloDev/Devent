@@ -11,9 +11,9 @@ const EventDetails = () => {
 				<img
 					src={event.image}
 					alt='event image supposed ni'
-					className='w-full h-full object-cover opacity-70'
+					className='w-full h-full object-cover'
 				/>
-				<div className='absolute inset-0 bg-black/40'></div>
+				<div className='absolute inset-0 bg-black/20'></div>
 				<h1 className='absolute bottom-6 left-4 md:left-10 text-3xl md:text-5xl font-bold'>
 					{event.title}
 				</h1>
