@@ -218,37 +218,37 @@ export const team: TeamMember[] = [
 		id: 1,
 		name: 'Ashley Quicho',
 		role: 'Project Manager',
-		nawng: '/nawng-sa-mga-taw/ashley.jpg',
+		nawng: '/nawng-sa-mga-taw/ashley.png',
 	},
 	{
 		id: 2,
 		name: 'Felixandra Malicay',
 		role: 'Business Analyst',
-		nawng: '/nawng-sa-mga-taw/fel.jpg',
+		nawng: '/nawng-sa-mga-taw/fel.png',
 	},
 	{
 		id: 3,
 		name: 'Paul Villacura',
 		role: 'Quality Assurance Engineer',
-		nawng: '/nawng-sa-mga-taw/paul.jpg',
+		nawng: '/nawng-sa-mga-taw/paul.png',
 	},
 	{
 		id: 4,
 		name: 'Angelo Galleros',
 		role: 'Lead Developer',
-		nawng: '/nawng-sa-mga-taw/ako.jpg',
+		nawng: '/nawng-sa-mga-taw/ako.png',
 	},
 	{
 		id: 4,
 		name: 'Mark Luis Salvador',
 		role: 'UI/UX Designer',
-		nawng: '/nawng-sa-mga-taw/luis.jpg',
+		nawng: '/nawng-sa-mga-taw/luis.png',
 	},
 	{
 		id: 4,
 		name: 'Alfasher Jamsani',
 		role: 'Technical Writer',
-		nawng: '/nawng-sa-mga-taw/alfasher.jpg',
+		nawng: '/nawng-sa-mga-taw/alfasher.png',
 	},
 ];
 

@@ -64,7 +64,7 @@ const EventsList = ({ events, hasActiveFilters }: EventsListProps) => {
 
 								<div className='flex items-center justify-between mt-4'>
 									<p className='text-lg font-semibold text-[#FFE540]'>
-										{event.price}
+										₱ {event.price}
 									</p>
 									<Button
 										className='bg-gradient-to-b from-[#6B5BFF] hover:bg-gradient-to-t to-[#2C2F48] text-gray-200 cursor-pointer rounded-lg'
